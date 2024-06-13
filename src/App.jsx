@@ -6,9 +6,11 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+
   return (
    <div>
-    <h1>Yonas is King</h1>
+    <h2>{count}</h2>
+    <h1 onClick={()=>setCount(prev=>prev+1)}>Yonas is King</h1>
    </div>
   )
 }
